@@ -1,53 +1,54 @@
-# Fraud Detection Model
+# 🔍 Fraud Detection Model & Dashboard
 
-## Project Overview
-This project focuses on detecting fraudulent transactions using machine learning models. The dataset consists of financial transaction records labeled as fraudulent or non-fraudulent. Various classification models, including Logistic Regression, Decision Tree, and XGBoost, have been implemented and evaluated.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Model Accuracy](https://img.shields.io/badge/XGBoost-99.95%25-brightgreen)
+![Streamlit](https://img.shields.io/badge/Deployed%20on-Streamlit-orange)
 
-## Dataset
-Due to its large size, the dataset has not been uploaded to GitHub. However, it is available on Kaggle:
-[Kaggle Dataset - Fraud Detection](https://www.kaggle.com/datasets/lakshaykahai/fraud-detection)
-
-## Preprocessing
-- **Data Cleaning:** Handled missing values and inconsistent data.
-- **Encoding:** Converted categorical variables into numerical form.
-- **Scaling:** Standardized numerical features using MinMaxScaler.
-- **Splitting:** Divided the dataset into training and testing sets.
-
-## Models Used
-The following models were trained and evaluated:
-- **Logistic Regression**
-- **Decision Tree Classifier**
-- **XGBoost Classifier**
-
-## Evaluation Metrics
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-score**
-
-## Results
-| Model                 | Accuracy  |
-|-----------------------|-----------|
-| Logistic Regression  | 0.9987    |
-| Decision Tree       | 0.9995    |
-| XGBoost            | 0.9995    |
-
-## How to Run
-1. Download the dataset from Kaggle.
-2. Place it in the project directory.
-3. Run `internship.ipynb` in Jupyter Notebook.
-
-## Dependencies
-- Python 3.x
-- NumPy
-- Pandas
-- Scikit-learn
-- XGBoost
-- Matplotlib
-
-## Author
-Lakshay Handa
+## 📌 Project Overview  
+This project tackles the challenge of identifying **fraudulent transactions** using machine learning. It includes:
+- Model training & evaluation in `internship.ipynb`
+- A Streamlit dashboard for real-time predictions 🎛️
 
 ---
-For any queries, feel free to reach out!
 
+## 📊 Dataset  
+📂 The dataset is hosted on Kaggle:  
+👉 [Kaggle Dataset – Fraud Detection](https://www.kaggle.com/datasets/lakshaykahai/fraud-detection)
+
+Due to size constraints, it’s not uploaded to this repository.
+
+---
+
+## 🧹 Preprocessing Steps
+- **Cleaned** missing values  
+- **Encoded** categorical data  
+- **Scaled** numerical values using MinMaxScaler  
+- **Split** into training and testing sets  
+
+---
+
+## 🤖 Models & Performance
+
+| Model                | Accuracy   |
+|---------------------|------------|
+| Logistic Regression | 99.87%     |
+| Decision Tree       | 99.95%     |
+| XGBoost             | 99.95%     |
+
+📈 *Evaluation metrics used:* Accuracy, Precision, Recall, F1-Score
+
+---
+
+## 🚀 Streamlit App Deployment
+
+The app is deployed using Streamlit and allows real-time fraud prediction. Try it here:  
+🌐 **[Live App – Fraud Detection Dashboard](https://fraud-detection-lakshay.streamlit.app/)**
+
+### 🧰 To run locally:
+1. Clone the repo  
+2. Download dataset from [Kaggle](https://www.kaggle.com/datasets/lakshaykahai/fraud-detection) and place it in the project root  
+3. Run:
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
